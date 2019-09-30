@@ -1,2 +1,2 @@
-# encounter-bot
-A bot that creates an encounter for your TTRPG
+# TTRPG Encounter
+A program that creates an encounter for your TTRPGs
