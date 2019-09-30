@@ -5,20 +5,23 @@ from tkinter import *
 from guiCommands import pathgame, dndgame
 from algorithmn import algorithmn
 
-window = tkinter.Tk()
-window.title("TTRPG Encounters")
-window.geometry('500x500')
+game = tkinter.Tk()
+game.title("TTRPG Encounters")
+game.geometry('500x500')
 
 lbl = Label(window, text = "Chose Your TTRPG", font=("Arial Bold", 50))
 lbl.grid(column=0, row=0)
 
-pathfinder = Button (window, bg = "red", text ="Pathfinder", command = pathgame).grid(row=2, column=1)
-dnd5e = Button (window, bg = "blue", text ="D&D 5e", command = dndgame).grid(row=2, column=4)
-
-tk.Button(master, text='Quit', command=master.quit).grid(row=3, column=0, sticky=tk.W, pady=4)
-
-
+pathfinder = Button (game, bg = "red", text ="Pathfinder", command = pathgame).grid(row=2, column=1)
 pathfinder.pack()
+
+dnd5e = Button (game, bg = "blue", text ="D&D 5e", command = dndgame).grid(row=2, column=4)
 dnd5e.pack()
+
+tk.Button(game, text='Quit', command=master.quit).grid(row=3, column=0, sticky=tk.W, pady=4)
+
+
+
+
 #pls dont touch this
 window.mainloop()
