@@ -3,7 +3,7 @@
 import tkinter
 from tkinter import *
 from guiCommands import pathgame, dndgame
-
+from algorithmn import algorithmn
 
 window = tkinter.Tk()
 window.title("TTRPG Encounters")
