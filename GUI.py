@@ -1,5 +1,5 @@
 #code broken fix ASAP
-
+#import a .py file as commands and such to clean up code
 import tkinter
 from tkinter import *
 
